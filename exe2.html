@@ -1,0 +1,29 @@
+<html>
+    <head><title>exe2</title>
+        <h1>exe2</h1>>
+        <br>
+    <script>
+        function Calc() {
+            
+            var num1 = document.getElementById("pv1").value;
+            var num2 = document.getElementById("pv2").value;
+            var num3 = document.getElementById("pv3").value;
+            
+            var pv1 =  parseFloat(num1)* 0.20;
+            var pv2 = parseFloat(num2)* 0.30;
+            var pv3  = parseFloat(num3)* 0.50;
+            var soma = pv1 + pv2 +pv3;
+          
+
+            alert("A media das notas do aluno;" +soma) ;
+         } </script>
+    </head>
+    <body>
+        Digite a prova 1:<input type="text" height="35" maxlength="50" name="numero" id="pv1">
+        Digite a prova 2 :<input type="text" height="35" maxlength="50" name="numero" id="pv2">
+        Digite a prova 3 :<input type="text" height="35" maxlength="50" name="numero" id="pv3">
+
+    <input type="button" value="Enviar" onclick="Calc()">
+    </body>
+
+</html>

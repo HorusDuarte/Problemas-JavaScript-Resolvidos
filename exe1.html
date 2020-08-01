@@ -1,0 +1,24 @@
+<html>
+    <head><title>exe1</title>
+        <h1>exe1</h1>>
+        <br>
+    <script>
+        function Calc() {
+            
+            var num = document.getElementById("num").value;
+            
+            var vend =  parseFloat(num)* 0.25;
+            var fabri = parseFloat(num)* 0.45;
+
+            var media= (parseFloat(vend) + parseFloat(fabri)) + parseFloat(num);
+
+            alert("O preco final do carro sera com base em 0.45+0.25+PC:" +media) 
+         } </script>
+    </head>
+    <body>
+        Digite o preco do carro:<input type="text" height="35" maxlength="50" name="numero" id="num">
+        
+    <input type="button" value="Enviar" onclick="Calc()">
+    </body>
+
+</html>

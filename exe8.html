@@ -1,0 +1,25 @@
+<html>
+    <head><title>exe8</title>
+        <h1>exe8</h1>>
+        <br>
+    <script>
+        function Calc() {
+            
+            var num = document.getElementById("num").value;
+        
+            
+            if (num>=100 && num<=200) {
+                alert("O numero esta contido dentro da margem de 100-200,sendo esse:" +num);
+            }else  {
+                alert("Nao esta contido:" +num);
+            }
+        }
+    </script>
+    </head>
+    <body>
+        Digite numero:<input type="text" height="35" maxlength="50" name="numero" id="num">
+    
+    <input type="button" value="Enviar" onclick="Calc()">
+    </body>
+
+</html>

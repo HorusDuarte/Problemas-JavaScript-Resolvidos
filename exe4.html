@@ -1,0 +1,29 @@
+<html>
+    <head><title>exe1</title>
+        <h1>exe1</h1>>
+        <br>
+    <script>
+        function Calc() {
+            
+            var taxa = document.getElementById("taxa").value;
+            var valor= document.getElementById("prestacao").value;
+            var atraso= document.getElementById("atraso").value;
+            
+            var media= parseFloat(valor)+ (parseFloat(valor)*(parseFloat(taxa)/100)*atraso);
+
+            alert("A prestação é R$: " +media) 
+         } </script>
+    </head>
+    <body>
+        Digite o valor da taxa:<input type="text" height="35" maxlength="50" name="numero" id="taxa">
+        <br>
+        <br>
+        Digite o valor da prestacao:<input type="text" height="35" maxlength="50" name="numero" id="prestacao">
+        <br>
+        <br>
+        Digite os dias de atraso: <input type="text" height="35" maxlength="50" name="numero" id="atraso">
+        <br>
+    <input type="button" value="Enviar" onclick="Calc()">
+    </body>
+
+</html>
